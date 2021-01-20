@@ -68,6 +68,8 @@ func Provider() terraform.ResourceProvider {
 			"github_user_invitation_accepter":    resourceGithubUserInvitationAccepter(),
 			"github_user_ssh_key":                resourceGithubUserSshKey(),
 			"github_branch_default":              resourceGithubBranchDefault(),
+
+			"github_pull_request":                resourceGithubPullRequest(),
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{
