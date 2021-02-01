@@ -23,7 +23,7 @@ jobs :
         with : { go-version : "1.15" }
       - id : gpg
         name : gpg imports
-        uses : "crazy-max/ghaction-import-gpg@v2"
+        uses : "crazy-max/ghaction-import-gpg@v3.1.0"
         env :
           GPG_PRIVATE_KEY : "${{ secrets.GPG_PRIVATE_KEY }}"
           PASSPHRASE : "${{ secrets.GPG_PASSPHRASE }}"
